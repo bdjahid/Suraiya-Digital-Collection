@@ -29,6 +29,17 @@ imf{
   justify-content: space-around;
   align-items: center;
 }
+.btn{
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+}
 /* reset code and common end here */
 
 
@@ -83,6 +94,24 @@ nav{
     font-size: 2rem;
 }
 /* navbar ends here */
+
+/* footer starts here */
+.footer{
+    padding: 1rem;
+    background-color: var(--primary-color);
+    min-height: 10vh;
+    color: rgb(27, 26, 24);
+    font-size: 1.1rem;
+}
+.btn-subscribe{
+    margin-left: -5px;
+}
+.footer-input{
+    border: none;
+    padding: var(--padding);
+    width: 20rem;
+}
+/* footer ends here */
 
 
 /* responsive */
