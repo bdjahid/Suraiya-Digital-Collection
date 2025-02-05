@@ -74,7 +74,7 @@ imf{
     background-color: black;
 }
 .text-center{
-    text-align: centers;
+    text-align: center;
 }
 .section-title{
     font-size: 2rem;
@@ -395,6 +395,21 @@ main{
 .profile_buttons button{
     background-color: transparent;
 }
+/* contact */
+.contact-section{
+    min-height: 52vh;
+}
+.contact-container{
+    margin-top: 5rem;
+}
+.contact-address{
+    flex: 1;
+    gap: 2rem;
+    flex-direction: column;
+}
+.contact-map{
+    width: 80%;
+}
 /* main ends here */
 
 
@@ -441,6 +456,18 @@ main{
    }
    .cart_items .cart_payment{
     width: 90%;
+   }
+   .form,.form-control{
+    width: 100%;
+   }
+   .form-control input,textarea{
+    width: 80%;
+   }
+   .register .card, .login .card{
+    width: 90%;
+   }
+   .contact-address{
+    width: 100%;
    }
 }
 @media(max-width:768px){
