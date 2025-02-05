@@ -141,7 +141,7 @@ nav{
    .header{
     padding: 4rem 0;
     height: 80vh;
-    background-image: url(/img.avif);
+    background-image: url("/image/img.avif");
      /* background: url(/img.avif) no-repeat center;  */
     background-size: cover; 
    }
