@@ -374,6 +374,27 @@ main{
 .contact-btn{
     width: 30%;
 }
+
+/* profile */
+.profile{
+    flex-direction: column;
+    gap: 3rem;
+}
+.profile .card{
+    padding: var(--padding);
+    width: 30rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+.profile_img{
+    width: 8vw; 
+    height: 8vw;
+    border-radius: 50%;
+    border: 1px solid lightcoral;
+}
+.profile_buttons button{
+    background-color: transparent;
+}
 /* main ends here */
 
 
