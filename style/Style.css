@@ -141,8 +141,7 @@ nav{
    .header{
     padding: 4rem 0;
     height: 80vh;
-    background: url(/image/background\ image.avif) no-repeat center;
-    background-attachment: fixed;
+    background: url(/image/ecomarce.jpg) no-repeat center;
     background-size: cover; 
    }
    .banner{
