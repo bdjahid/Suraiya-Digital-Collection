@@ -336,8 +336,8 @@ main{
     gap: 1rem;
 }
 
-/* register */
-.register{
+/* register and login */
+.register,.login{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -345,7 +345,7 @@ main{
     gap: 3rem; 
     min-height: 60vh; 
 }
-.register .card{
+.register .card, .login .card{
     width: 45rem;
 }
 .form{
