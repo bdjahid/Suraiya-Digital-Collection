@@ -55,6 +55,24 @@ imf{
     /* box-shadow: 0.1rem0.2rem 0.8rem rgb(114, 18, 32); */
     background-color: rgb(240, 228, 232);  
 }
+.hr-design{
+    margin: 0.5rem 0;
+}
+.dot{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.black{
+    background-color: black;
+}
 /* reset code and common end here */
 
 
@@ -219,6 +237,99 @@ main{
 .learn-more{
     color: rgb(228, 6, 180);
 }
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination_btn{
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+}
+/* pagination */
+.pagination_btn:first-child{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+}
+/* product */
+.product-details-left{
+    flex: 1;
+}
+.product-details-left img{
+    width: 40rem;
+    height: 30rem;
+} 
+.product-details-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* cart design */
+.cart{
+    padding: var(--padding);
+    gap: 1rem;
+}
+.cart .card{
+    margin-bottom: 1rem;
+}
+.cart_items{
+    flex: 1;
+}
+.cart_items-action{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart_item input{
+    flex: 0.1rem;
+}
+.cart_item-img{
+    flex: 0.2;
+    width: 15rem;
+    height: 10rem;
+} 
+.cart_item-description{
+    flex: 0.4rem;
+}
+.cart_item-shipping{
+    margin-top: 0.5rem;
+    color: red;
+}
+.cart_item-actions{
+    flex: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.cart_payment{
+    flex: 1;
+}
+.cart_payment-summary > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+.cart_payment-btn{
+    width: 100%;
+}
+.cart_payment-methods > h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.cart_payment-methods> div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
 /* main ends here */
 
 
@@ -260,9 +371,22 @@ main{
    .header{
     height: 100vh;
    }
+   .products{
+    grid-template-columns: repeat(2,minmax(0,1fr));
+   }
+   .cart_items .cart_payment{
+    width: 90%;
+   }
 }
 @media(max-width:768px){
-
+   .flex-center{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+       } 
+    .products{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+       }
 }
 @media(max-width:600px){
 
